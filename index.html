@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03 logica de programação</title>
+</head>
+
+<script>
+    var jogador1 = prompt("jogador 1, escolha um numero de 1 a 10");
+    var num1 = parseInt(jogador1);
+    var jogador2 = prompt("jogador 2, escolha um numero de 1 a 10");
+    var num2 = parseInt(jogador2)
+        alert("o jogador1 digitou:" + num1);
+        alert("o jogador2 digitou:" + num2);
+
+    var sorteio = parseInt(Math.random() * 2)
+        alert(sorteio)
+
+    if(sorteio === 0){
+        alert ("O menor numero digitado ganhara.")
+    }else{
+        alert("O maior numero digitado será o vencedor.")
+    }
+    
+    if(sorteio === 0 && num1 < num2){
+        alert("vitoria do jogador1")
+    }
+    if(sorteio === 1 && num1 > num2){
+        alert("Vitoria do jogador1 ")
+    }else{
+        alert("Vitoria do jogador2")
+    }
+    
+    
+    </script>
+<body>
+    
+</body>
+</html>
